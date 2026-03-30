@@ -1,0 +1,20 @@
+build/
+build_log.txt
+cmake-build-*/
+.cache/
+compile_commands.json
+
+# Generated BPF artifacts
+bpf/vmlinux.h
+*.bpf.o
+*.skel.h
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,27 @@
+# KernelScope configuration file.
+#
+# All values here serve as defaults. CLI flags override them.
+# See docs/compatibility.md for supported kernel versions and features.
+
+[thresholds]
+min_latency_us = 100
+min_offcpu_us  = 1000
+
+[stacks]
+user         = true
+kernel       = false
+sampling_pct = 100
+
+[ringbuf]
+size_mb = 16
+
+[window]
+duration_sec = 5
+max_windows  = 60
+
+[symbolizer]
+cache_size    = 10000
+use_addr2line = false
+
+[export]
+default_format = "json"
